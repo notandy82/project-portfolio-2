@@ -1,11 +1,11 @@
 function onePlayer() {
-    var game1 = document.getElementById("splash-page");
-    game1.remove();
+    document.getElementById("splash").style.display="none";
+    document.getElementById("oneplayer").style.display="block";
     console.log("launch 1 player game");
 }
 
 function twoPlayer() {
-    var game2 = document.getElementById("splash-page");
-    game2.remove();
+    document.getElementById("splash").style.display="none";
+    document.getElementById("oneplayer").style.display="block";
     console.log("launch 2 player game")
 }
