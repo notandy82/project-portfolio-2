@@ -6,6 +6,6 @@ function onePlayer() {
 
 function twoPlayer() {
     document.getElementById("splash").style.display="none";
-    document.getElementById("oneplayer").style.display="block";
+    document.getElementById("twoplayer").style.display="block";
     console.log("launch 2 player game")
 }
