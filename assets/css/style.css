@@ -31,3 +31,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.vert-flex {
+    display: flex;
+    flex-direction: column;
+}
