@@ -8,7 +8,7 @@ function onePlayer() {
 function twoPlayer() {
     document.getElementById("splash").style.display="none";
     document.getElementById("twoplayer").style.display="block";
-    console.log("launch 2 player game")
+    console.log("launch 2 player game");
 }
 
 // One player game functions
@@ -47,4 +47,42 @@ function playerDynamiteThrow() {
     console.log(playerChoice);
     compThrow();
     
+}
+
+if (playerChoice === "Rock") {
+    if (compChoice === "Rock") {
+        tie();
+    } else if (compChoice ==="Scissors") {
+        playerWins();
+    } else {
+        compWins();
+    }
+} else if (playerChoice === "Scissors") {
+    if (compChoice === "Rock") {
+        compWins();
+    } else if (compChoice ==="Scissors") {
+        tie();
+    } else {
+        playerWins();
+    }
+} else {
+    if (compChoice === "Rock") {
+        playerWins();
+    } else if (compChoice ==="Scissors") {
+        compWins();
+    } else {
+        tie();
+    }
+}
+
+function playerWins() {
+    console.log("You win!")
+}
+
+function compWins() {
+    console.log("The computer wins!");
+}
+
+function tie() {
+    console.log("It's a tie!");
 }

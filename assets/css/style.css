@@ -46,3 +46,15 @@ button {
     border-style: solid;
     font-family: Patrick Hand SC, cursive;
 }
+
+#player-win {
+    display: none;
+}
+
+#comp-win {
+    display: none;
+}
+
+#player-tie {
+    display: none;
+}
