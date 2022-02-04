@@ -19,7 +19,7 @@ var compChoice;
 function compThrow() {
         let compRandom = Math.floor(Math.random() * 3) + 1;
         if (compRandom == 1) {
-        compThrow = "Rock";
+        compChoice = "Rock";
     } else if (compRandom == 2) {
         compChoice = "Scissors";
     } else {
