@@ -12,10 +12,34 @@ function twoPlayer() {
 }
 
 // One player game functions
-var playerChoice;
-var compChoice;
+let playerChoice = "";
+let compChoice = "";
+
+
+
+function playerRockThrow() {
+    playerChoice = "Rock";
+    console.log(playerChoice);
+    compThrow();
+    bringIt();
+}
+
+function playerScissorsThrow() {
+    playerChoice = "Scissors";
+    console.log(playerChoice);
+    compThrow();
+    bringIt();
+}
+
+function playerDynamiteThrow() {
+    playerChoice = "Dynamite";
+    console.log(playerChoice);
+    compThrow();
+    bringIt();
+}
 
 // Function for computer choice
+
 function compThrow() {
         let compRandom = Math.floor(Math.random() * 3) + 1;
         if (compRandom == 1) {
@@ -28,50 +52,29 @@ function compThrow() {
     console.log(compChoice);
 }
 
-function playerRockThrow() {
-    playerChoice = "Rock";
-    console.log(playerChoice);
-    compThrow();
-    
-}
+// If else statements for determining winner
 
-function playerScissorsThrow() {
-    playerChoice = "Scissors";
-    console.log(playerChoice);
-    compThrow();
-    
-}
-
-function playerDynamiteThrow() {
-    playerChoice = "Dynamite";
-    console.log(playerChoice);
-    compThrow();
-    
-}
-
-if (playerChoice === "Rock") {
-    if (compChoice === "Rock") {
+function bringIt() {
+    if (playerChoice === "Rock" && compChoice === "Rock") {
         tie();
-    } else if (compChoice ==="Scissors") {
+    } else if (playerChoice === "Rock" && compChoice === "Scissors") {
         playerWins();
-    } else {
+    } else if (playerChoice === "Rock" && compChoice === "Dynamite") {
         compWins();
-    }
-} else if (playerChoice === "Scissors") {
-    if (compChoice === "Rock") {
+    } else if (playerChoice === "Scissors" && compChoice === "Rock") {
         compWins();
-    } else if (compChoice ==="Scissors") {
+    } else if (playerChoice === "Scissors" && compChoice === "Scissors") {
+        tie();
+    } else if (playerChoice === "Scissors" && compChoice === "Dynamite") {
+        playerWins();
+    } else if (playerChoice === "Dynamite" && compChoice === "Rock") {
+        playerWins();
+    } else if (playerChoice === "Dynamite" && compChoice === "Scissors") {
+        compWins();
+    } else if (playerChoice === "Dynamite" && compChoice === "Dynamite") {
         tie();
     } else {
-        playerWins();
-    }
-} else {
-    if (compChoice === "Rock") {
-        playerWins();
-    } else if (compChoice ==="Scissors") {
-        compWins();
-    } else {
-        tie();
+        // do nothing
     }
 }
 
