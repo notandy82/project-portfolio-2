@@ -51,17 +51,6 @@ document.addEventListener("keydown", function(e) {
     }
 });
 
-//functions to add points to scoreboard
-
-function score() {
-    ++playerScore;
-    document.getElementById("player-score").innerHTML = playerScore;
-}
-
-function computerScore() {
-    ++compScore;
-    document.getElementById("computer-score").innerHTML = compScore;
-}
 
 // Function for computer choice
 
@@ -124,4 +113,16 @@ function tie() {
     document.getElementById("player-win").style.display="none";
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="block";
+}
+
+//functions to add points to scoreboard
+
+function score() {
+    ++playerScore;
+    document.getElementById("player-score").innerHTML = playerScore;
+}
+
+function computerScore() {
+    ++compScore;
+    document.getElementById("computer-score").innerHTML = compScore;
 }
