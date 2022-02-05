@@ -39,6 +39,18 @@ function playerDynamiteThrow() {
     bringIt();
 }
 
+document.addEventListener("keydown", function(e) {
+    if (e.keyCode == 65) {
+        playerRockThrow();
+    } else if (e.keyCode == 83) {
+        playerScissorsThrow();
+    } else if (e.keyCode == 68) {
+        playerRockThrow();
+    } else {
+        // do nothing
+    }
+});
+
 //functions to add points to scoreboard
 
 function score() {
