@@ -3,11 +3,16 @@
 body {
     text-align: center;
     font-family: ABeeZee, sans-serif;
+    background-color: #f28395;
 }
 
 .heading {
     text-align: center;
+}
 
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .game-area {
@@ -15,6 +20,7 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
 }
 
 #splash {
