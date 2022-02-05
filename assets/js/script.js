@@ -14,7 +14,8 @@ function twoPlayer() {
 // One player game functions
 let playerChoice = "";
 let compChoice = "";
-
+var playerScore = 0;
+var compScore = 0;
 
 
 function playerRockThrow() {
@@ -36,6 +37,18 @@ function playerDynamiteThrow() {
     console.log(playerChoice);
     compThrow();
     bringIt();
+}
+
+//functions to add points to scoreboard
+
+function score() {
+    ++playerScore;
+    document.getElementById("player-score").innerHTML = playerScore;
+}
+
+function computerScore() {
+    ++compScore;
+    document.getElementById("computer-score").innerHTML = compScore;
 }
 
 // Function for computer choice
@@ -79,13 +92,24 @@ function bringIt() {
 }
 
 function playerWins() {
-    console.log("You win!")
+    console.log("You win!");
+    document.getElementById("player-win").style.display="block";
+    document.getElementById("comp-win").style.display="none";
+    document.getElementById("player-tie").style.display="none";
+    score();
 }
 
 function compWins() {
     console.log("The computer wins!");
+    document.getElementById("player-win").style.display="none";
+    document.getElementById("comp-win").style.display="block";
+    document.getElementById("player-tie").style.display="none";
+    computerScore();
 }
 
 function tie() {
     console.log("It's a tie!");
+    document.getElementById("player-win").style.display="none";
+    document.getElementById("comp-win").style.display="none";
+    document.getElementById("player-tie").style.display="block";
 }
