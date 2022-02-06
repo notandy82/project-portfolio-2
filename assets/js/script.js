@@ -150,9 +150,33 @@ function tie() {
 function score() {
     ++playerScore;
     document.getElementById("player-score").innerHTML = playerScore;
+    winState();
 }
 
 function computerScore() {
     ++compScore;
     document.getElementById("computer-score").innerHTML = compScore;
+    winState();
 }
+
+//Win conditions
+
+function winState() {
+    if (playerScore === 5 || compScore === 5) {
+        playerGameOver()
+        console.log("game over");
+    } else {
+        console.log("keep playing");
+    }
+}
+
+function playerGameOver() {
+    document.getElementById("game-over-modal").style.display="block";
+    if (playerScore === 5) {
+      document.getElementById("p1-win").style.display="block";
+      document.getElementById("p1-lose").style.display="none";
+    } else {
+      document.getElementById("p1-win").style.display="none";
+      document.getElementById("p1-lose").style.display="block";
+    }
+};

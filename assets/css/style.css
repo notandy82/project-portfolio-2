@@ -24,6 +24,26 @@ body {
     font-weight: bold;
 }
 
+#game-over-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    text-align: left;
+    border-style: ridge;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#p1-win {
+    display: none;
+}
+  
+#p1-lose {
+    display: none;
+}
+
 .heading {
     text-align: center;
 }
