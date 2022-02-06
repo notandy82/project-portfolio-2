@@ -23,6 +23,7 @@ function playerRockThrow() {
     console.log(playerChoice);
     compThrow();
     bringIt();
+    disableOne();
 }
 
 function playerScissorsThrow() {
@@ -51,6 +52,19 @@ document.addEventListener("keydown", function(e) {
     }
 });
 
+function disableOne() {
+    var off = document.getElementsByClassName("player-one-choice");
+    for (var i = 0; i < off.length; i++) {
+        off[i].disabled = true;
+      }
+}
+
+function enableOne() {
+    var on = document.getElementsByClassName("player-one-choice");
+    for (var i = 0; i < on.length; i++) {
+        on[i].disabled = false;
+      }
+}
 
 // Function for computer choice
 
