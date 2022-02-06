@@ -31,6 +31,7 @@ function playerScissorsThrow() {
     console.log(playerChoice);
     compThrow();
     bringIt();
+    disableOne();
 }
 
 function playerDynamiteThrow() {
@@ -38,6 +39,7 @@ function playerDynamiteThrow() {
     console.log(playerChoice);
     compThrow();
     bringIt();
+    disableOne();
 }
 
 document.addEventListener("keydown", function(e) {
