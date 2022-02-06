@@ -11,6 +11,16 @@ function twoPlayer() {
     console.log("launch 2 player game");
 }
 
+// Game help modal
+
+function helpModal() {
+    document.getElementById("help-modal").style.display="block";
+}
+
+function noHelp() {
+    document.getElementById("help-modal").style.display="none";
+}
+
 // One player game functions
 let playerChoice = "";
 let compChoice = "";

@@ -6,6 +6,24 @@ body {
     background-color: #ccffcc;
 }
 
+/** styling for modal**/
+
+.get-help {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    text-align: left;
+    border-style: ridge;
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.close {
+    font-weight: bold;
+}
+
 .heading {
     text-align: center;
 }

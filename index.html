@@ -19,7 +19,23 @@
         <button onclick="twoPlayer()">
             2 Player
         </button>
-
+        <button id="help" onclick="helpModal()">
+            How to Play
+        </button>
+    </div>
+    <!--Modal code from w3schools-->
+    <div id="help-modal" class="get-help">
+        <div class="modal-content">
+            <span class="close" onclick="noHelp()">&times;</span>
+            <ul>
+                <li>Rock beats scissors</li>
+                <li>Scissors beats dynamite</li>
+                <li>Dynamite beats scissors</li>
+                <li>Play against the computer using the buttons or A, S, and D keys</li>
+                <li>Play against a friend using the buttons or A, S, and D keys vs J, K, and L keys</li>
+                <li>The first to 5 points is the winner</li>
+            </ul>
+        </div>
     </div>
     <div class="game-area" id="oneplayer">
         <h2>One Player Game</h2>
