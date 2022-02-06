@@ -76,6 +76,7 @@ function enableOne() {
     for (var i = 0; i < on.length; i++) {
         on[i].disabled = false;
       }
+    document.getElementById("next").style.display = "none";
 }
 
 // Function for computer choice
