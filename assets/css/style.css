@@ -35,6 +35,10 @@ h1 {
     display: none;
 }
 
+#next {
+    display: none;
+}
+
 .flexbox {
     padding: 5%;
     display: flex;

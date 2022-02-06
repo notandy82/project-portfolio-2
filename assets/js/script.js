@@ -97,6 +97,7 @@ function playerWins() {
     document.getElementById("player-win").style.display="block";
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="none";
+    document.getElementById("next").style.display="block";
     score();
 }
 
@@ -105,6 +106,7 @@ function compWins() {
     document.getElementById("player-win").style.display="none";
     document.getElementById("comp-win").style.display="block";
     document.getElementById("player-tie").style.display="none";
+    document.getElementById("next").style.display="block";
     computerScore();
 }
 
@@ -113,6 +115,7 @@ function tie() {
     document.getElementById("player-win").style.display="none";
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="block";
+    document.getElementById("next").style.display="block";
 }
 
 //functions to add points to scoreboard
