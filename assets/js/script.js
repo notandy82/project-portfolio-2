@@ -182,8 +182,8 @@ function playerGameOver() {
 };
 
 function newGame() {
-    playerScore === 0;
-    compScore === 0;
+    document.getElementById("player-score").innerHTML=0;
+    document.getElementById("computer-score").innerHTML=0;
     document.getElementById("splash").style.display="block";
     document.getElementById("oneplayer").style.display="none";
     document.getElementById("game-over-modal").style.display="none";
