@@ -51,7 +51,7 @@
     <div class="game-area" id="oneplayer">
         <h2>One Player Game</h2>
         <div class="flexbox">
-            <div class="vert-flex">
+            <div class="vert-flex, spaced">
                 <div>
                     <h3>Player 1</h3>
                 </div>
@@ -64,13 +64,13 @@
                     <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite<br>D</button>
                 </div>
             </div>
-            <div>
+            <div class="spaced">
                 <h2 id="player-win">You win!</h2>
-                <h2 id="comp-win">The computer wins!</h2>
+                <h2 id="comp-win">You lose!</h2>
                 <h2 id="player-tie">It's a tie!</h2>
                 <button id="next" onclick="enableOne()">Next Round</button>
             </div>
-            <div class="vert-flex">
+            <div class="vert-flex, spaced">
                 <div>
                     <h3>Computer</h3>
                 </div>
