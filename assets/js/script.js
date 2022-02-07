@@ -52,6 +52,7 @@ function playerDynamiteThrow() {
     disableOne();
 }
 
+/** need to fix rules and buttons if issue isn't fixed
 document.addEventListener("keydown", function(e) {
     if (e.keyCode == 65) {
         playerRockThrow();
@@ -62,7 +63,7 @@ document.addEventListener("keydown", function(e) {
     } else {
         // do nothing
     }
-});
+});**/
 
 function disableOne() {
     var off = document.getElementsByClassName("player-one-choice");
