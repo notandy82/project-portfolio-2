@@ -104,8 +104,11 @@ function computerDynamiteImage() {
 }
 
 // If else statements for determining winner
-
 function bringIt() {
+    setTimeout(doIt, 1500);
+}
+
+function doIt() {
     if (playerChoice === "Rock" && compChoice === "Rock") {
         tie();
     } else if (playerChoice === "Rock" && compChoice === "Scissors") {
