@@ -174,6 +174,7 @@ function computerScore() {
 function winState() {
     if (playerScore === 5 || compScore === 5) {
         playerGameOver()
+        document.getElementById("next").style.display="none";
         console.log("game over");
     } else {
         console.log("keep playing");
