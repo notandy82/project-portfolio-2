@@ -8,6 +8,11 @@ body {
 
 /** styling for modal**/
 
+button {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
 .get-help {
     display: none;
     position: fixed;
