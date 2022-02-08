@@ -3,12 +3,7 @@ function onePlayer() {
     document.getElementById("splash").style.display="none";
     document.getElementById("oneplayer").style.display="block";
     console.log("launch 1 player game");
-}
-
-function twoPlayer() {
-    document.getElementById("splash").style.display="none";
-    document.getElementById("twoplayer").style.display="block";
-    console.log("launch 2 player game");
+    enableOne();
 }
 
 // Game help modal
@@ -63,19 +58,6 @@ function playerScissorsImage() {
 function playerDynamiteImage() {
     document.getElementById("player-image").src="assets/images/dynamite.png";
 }
-
-/** need to fix rules and buttons if issue isn't fixed
-document.addEventListener("keydown", function(e) {
-    if (e.keyCode == 65) {
-        playerRockThrow();
-    } else if (e.keyCode == 83) {
-        playerScissorsThrow();
-    } else if (e.keyCode == 68) {
-        playerRockThrow();
-    } else {
-        // do nothing
-    }
-});**/
 
 function disableOne() {
     var off = document.getElementsByClassName("player-one-choice");

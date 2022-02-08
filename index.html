@@ -16,8 +16,7 @@
                 <li>Rock beats scissors</li>
                 <li>Scissors beats dynamite</li>
                 <li>Dynamite beats scissors</li>
-                <li>Play against the computer using the buttons or A, S, and D keys</li>
-                <li>Play against a friend using the buttons or A, S, and D keys vs J, K, and L keys</li>
+                <li>Play against the computer using the buttons</li>
                 <li>The first to 5 points is the winner</li>
             </ul>
         </div>
@@ -46,10 +45,7 @@
             </div>
         </div>
         <button onclick="onePlayer()">
-            1 Player
-        </button>
-        <button onclick="twoPlayer()">
-            2 Player
+            Let's Play!
         </button>
         <button id="help" onclick="helpModal()">
             How to Play
@@ -58,7 +54,7 @@
     <!--Modal code from w3schools-->
     
     <div class="game-area" id="oneplayer">
-        <h2>One Player Game</h2>
+        <h2>Human vs Machine</h2>
         <div class="flexbox">
             <div class="vert-flex, spaced">
                 <div>
@@ -68,9 +64,9 @@
                     <img id="player-image" src="assets/images/dynamite.png" alt="image of dynamite" class="game-image">
                 </div>
                 <div>
-                    <button onclick="playerRockThrow()" class="player-one-choice">Rock<br>A</button>
-                    <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors<br>S</button>
-                    <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite<br>D</button>
+                    <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
+                    <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors</button>
+                    <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite</button>
                 </div>
             </div>
             <div class="spaced">
@@ -92,40 +88,6 @@
         <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
     </div>
     
-    <div class="game-area" id="twoplayer">
-        <h2>Two Player Game</h2>
-        <div class="flexbox">
-            <div class="vert-flex">
-                <div>
-                    <h3>Player 1</h3>
-                </div>
-                <div>
-                    img
-                </div>
-                <div>
-                    <button onclick="playerOneRock()">Rock<br>A</button>
-                    <button onclick="playerOneScissors()">Scissors<br>S</button>
-                    <button onclick="playerOneDynamite()">Dynamite<br>D</button>
-                </div>
-            </div>
-            <div class="vert-flex">
-                <div>
-                    <h3>Player 2</h3>
-                </div>
-                <div>
-                    img
-                </div>
-                <div>
-                    <button onclick="playerTwoRock()">Rock<br>J</button>
-                    <button onclick="playerTwoScissors()">Scissors<br>K</button>
-                    <button onclick="playerTwoDynamite()">Dynamite<br>L</button>
-                </div>
-            </div>
-        </div>
-        <h2>Score</h2>
-        <h3><span id="player1-score">0</span>:<span id="player2-score">0</span></h3>
-    </div>
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
