@@ -30,7 +30,6 @@ var compScore = 0;
 
 function playerRockThrow() {
     playerChoice = "Rock";
-    console.log(playerChoice);
     compThrow();
     playerRockImage();
     bringIt();
@@ -39,7 +38,6 @@ function playerRockThrow() {
 
 function playerScissorsThrow() {
     playerChoice = "Scissors";
-    console.log(playerChoice);
     playerScissorsImage();
     compThrow();
     bringIt();
@@ -48,7 +46,6 @@ function playerScissorsThrow() {
 
 function playerDynamiteThrow() {
     playerChoice = "Dynamite";
-    console.log(playerChoice);
     playerDynamiteImage();
     compThrow();
     bringIt();
@@ -56,7 +53,7 @@ function playerDynamiteThrow() {
 }
 
 function playerRockImage() {
-    document.getElementById("player-image").src="assets/images/rock.png";
+    document.getElementById("player-image").src="assets/images/rock_crop.png";
 }
 
 function playerScissorsImage() {
@@ -113,7 +110,7 @@ function compThrow() {
 }
 
 function computerRockImage() {
-    document.getElementById("computer-image").src="assets/images/rock.png";
+    document.getElementById("computer-image").src="assets/images/rock_crop.png";
 }
 
 function computerScissorsImage() {
