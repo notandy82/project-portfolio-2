@@ -32,6 +32,7 @@ function playerRockThrow() {
     playerChoice = "Rock";
     console.log(playerChoice);
     compThrow();
+    playerRockImage();
     bringIt();
     disableOne();
 }
@@ -39,6 +40,7 @@ function playerRockThrow() {
 function playerScissorsThrow() {
     playerChoice = "Scissors";
     console.log(playerChoice);
+    playerScissorsImage();
     compThrow();
     bringIt();
     disableOne();
@@ -47,9 +49,22 @@ function playerScissorsThrow() {
 function playerDynamiteThrow() {
     playerChoice = "Dynamite";
     console.log(playerChoice);
+    playerDynamiteImage();
     compThrow();
     bringIt();
     disableOne();
+}
+
+function playerRockImage() {
+    document.getElementById("player-image").src="assets/images/rock.png";
+}
+
+function playerScissorsImage() {
+    document.getElementById("player-image").src="assets/images/scissors.png";
+}
+
+function playerDynamiteImage() {
+    document.getElementById("player-image").src="assets/images/dynamite.png";
 }
 
 /** need to fix rules and buttons if issue isn't fixed
@@ -86,12 +101,27 @@ function compThrow() {
         let compRandom = Math.floor(Math.random() * 3) + 1;
         if (compRandom == 1) {
         compChoice = "Rock";
+        computerRockImage();
     } else if (compRandom == 2) {
         compChoice = "Scissors";
+        computerScissorsImage();
     } else {
         compChoice = "Dynamite";
+        computerDynamiteImage();
     }
     console.log(compChoice);
+}
+
+function computerRockImage() {
+    document.getElementById("computer-image").src="assets/images/rock.png";
+}
+
+function computerScissorsImage() {
+    document.getElementById("computer-image").src="assets/images/scissors.png";
+}
+
+function computerDynamiteImage() {
+    document.getElementById("computer-image").src="assets/images/dynamite.png";
 }
 
 // If else statements for determining winner
