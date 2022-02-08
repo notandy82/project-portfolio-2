@@ -41,6 +41,16 @@ button {
     margin-right: 25%;
 }
 
+/* On screens that are 560 px or less, makes modal wider */
+@media screen and (max-width: 560px) {
+    #game-over-modal {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
 #p1-win {
     display: none;
 }
