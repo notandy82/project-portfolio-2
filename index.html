@@ -37,13 +37,13 @@
     <div id="splash" class="game-area">
         <div class="flexbox">
             <div>
-                <img src="assets/images/rock_crop.png" alt="image of a rock" class="game-image">
+                <img src="assets/images/rock_reduced.png" alt="image of a rock" class="game-image">
             </div>
             <div>
-                <img src="assets/images/scissors.png" alt="image of scissors" class="game-image">
+                <img src="assets/images/scissors_reduced.png" alt="image of scissors" class="game-image">
             </div>
             <div>
-                <img src="assets/images/dynamite.png" alt="image of dynamite" class="game-image">
+                <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
             </div>
         </div>
         <button onclick="onePlayer()">
@@ -62,7 +62,7 @@
                     <h3>Player 1</h3>
                 </div>
                 <div>
-                    <img id="player-image" src="assets/images/dynamite.png" alt="image of dynamite" class="game-image">
+                    <img id="player-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
                 </div>
                 <div>
                     <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
@@ -74,19 +74,20 @@
                 <h2 id="player-win">You win!</h2>
                 <h2 id="comp-win">You lose!</h2>
                 <h2 id="player-tie">It's a tie!</h2>
-                <button id="next" onclick="enableOne()">Next Round</button>
+                <button id="next" onclick="enableOne()">Next Round</button>                
             </div>
             <div class="vert-flex, spaced">
                 <div>
                     <h3>Computer</h3>
                 </div>
                 <div>
-                    <img id="computer-image" src="assets/images/dynamite.png" alt="image of dynamite" class="game-image">
+                    <img id="computer-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
                 </div>            
             </div>
         </div>
         <h2>Score</h2>
         <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
+        <button id="no-more" onclick="newGame()">Quit</button>
     </div>
     
     <script src="assets/js/script.js"></script>

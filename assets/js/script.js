@@ -48,15 +48,15 @@ function playerDynamiteThrow() {
 }
 
 function playerRockImage() {
-    document.getElementById("player-image").src="assets/images/rock_crop.png";
+    document.getElementById("player-image").src="assets/images/rock_reduced.png";
 }
 
 function playerScissorsImage() {
-    document.getElementById("player-image").src="assets/images/scissors.png";
+    document.getElementById("player-image").src="assets/images/scissors_reduced.png";
 }
 
 function playerDynamiteImage() {
-    document.getElementById("player-image").src="assets/images/dynamite.png";
+    document.getElementById("player-image").src="assets/images/dynamite_reduced.png";
 }
 
 function disableOne() {
@@ -92,15 +92,15 @@ function compThrow() {
 }
 
 function computerRockImage() {
-    document.getElementById("computer-image").src="assets/images/rock_crop.png";
+    document.getElementById("computer-image").src="assets/images/rock_reduced.png";
 }
 
 function computerScissorsImage() {
-    document.getElementById("computer-image").src="assets/images/scissors.png";
+    document.getElementById("computer-image").src="assets/images/scissors_reduced.png";
 }
 
 function computerDynamiteImage() {
-    document.getElementById("computer-image").src="assets/images/dynamite.png";
+    document.getElementById("computer-image").src="assets/images/dynamite_reduced.png";
 }
 
 // If else statements for determining winner
@@ -201,4 +201,8 @@ function newGame() {
     document.getElementById("splash").style.display="block";
     document.getElementById("oneplayer").style.display="none";
     document.getElementById("game-over-modal").style.display="none";
+}
+
+function quitGame() {
+
 }
