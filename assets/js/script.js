@@ -19,8 +19,8 @@ function noHelp() {
 // One player game functions
 let playerChoice = "";
 let compChoice = "";
-var playerScore = 0;
-var compScore = 0;
+let playerScore = 0;
+let compScore = 0;
 
 
 function playerRockThrow() {
@@ -134,27 +134,28 @@ function doIt() {
 }
 
 function playerWins() {
-    console.log("You win!");
+    ++playerScore;
     document.getElementById("player-win").style.display="block";
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="none";
     document.getElementById("next").style.display="block";
     document.getElementById("round-result").style.display="block";
-    score();
+    updateScore();
+    winState();
 }
 
 function compWins() {
-    console.log("The computer wins!");
+    ++compScore;
     document.getElementById("player-win").style.display="none";
     document.getElementById("comp-win").style.display="block";
     document.getElementById("player-tie").style.display="none";
     document.getElementById("next").style.display="block";
     document.getElementById("round-result").style.display="block";
-    computerScore();
+    updateScore();
+    winState();
 }
 
 function tie() {
-    console.log("It's a tie!");
     document.getElementById("player-win").style.display="none";
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="block";
@@ -162,29 +163,21 @@ function tie() {
     document.getElementById("round-result").style.display="block";
 }
 
-//functions to add points to scoreboard
+//function to add points to scoreboard
 
-function score() {
-    ++playerScore;
-    document.getElementById("player-score").innerHTML = playerScore;
-    winState();
-}
-
-function computerScore() {
-    ++compScore;
-    document.getElementById("computer-score").innerHTML = compScore;
-    winState();
+function updateScore() {
+    document.getElementById("computer-score").textContent = compScore;
+    document.getElementById("player-score").textContent = playerScore;
 }
 
 //Win conditions
 
 function winState() {
     if (playerScore === 5 || compScore === 5) {
-        playerGameOver();
-        document.getElementById("next").style.display="none";
-        console.log("game over");
+        console.log("Game over")
+        playerGameOver();                
     } else {
-        console.log("keep playing");
+        console.log("Keep playing");
     }
 }
 
@@ -199,10 +192,21 @@ function playerGameOver() {
     }
 }
 
+function resetScore() {
+    playerScore = 0;
+    compScore = 0;
+    updateScore();
+}
+
 function newGame() {
-    document.getElementById("player-score").innerHTML=0;
-    document.getElementById("computer-score").innerHTML=0;
     document.getElementById("splash").style.display="block";
     document.getElementById("oneplayer").style.display="none";
     document.getElementById("game-over-modal").style.display="none";
+    resetScore();
+}
+
+function quitGame() {
+    document.getElementById("splash").style.display="block";
+    document.getElementById("oneplayer").style.display="none";
+    resetScore();
 }
