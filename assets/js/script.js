@@ -60,10 +60,8 @@ function playerDynamiteImage() {
 }
 
 function disableOne() {
-    var off = document.getElementsByClassName("player-one-choice");
-    for (var i = 0; i < off.length; i++) {
-        off[i].disabled = true;
-      }
+    document.getElementById("next").style.visibility="hidden";
+    document.getElementById("round-result").style.visibility="hidden";
 }
 
 function enableOne() {
@@ -71,8 +69,11 @@ function enableOne() {
     for (var i = 0; i < on.length; i++) {
         on[i].disabled = false;
       }
-    document.getElementById("next").style.display = "none";
-    document.getElementById("round-result").style.display = "none";
+    document.getElementById("next").style.visibility="hidden";
+    document.getElementById("round-result").style.visibility="hidden";
+    document.getElementById("player-win").style.visibility="hidden";
+    document.getElementById("comp-win").style.visibility="hidden";
+    document.getElementById("player-tie").style.visibility="hidden";
 }
 
 // Function for computer choice
@@ -135,32 +136,32 @@ function doIt() {
 
 function playerWins() {
     ++playerScore;
-    document.getElementById("player-win").style.display="block";
-    document.getElementById("comp-win").style.display="none";
-    document.getElementById("player-tie").style.display="none";
-    document.getElementById("next").style.display="block";
-    document.getElementById("round-result").style.display="block";
+    document.getElementById("player-win").style.visibility="visible";
+    document.getElementById("comp-win").style.visibility="hidden";
+    document.getElementById("player-tie").style.visibility="hidden";
+    document.getElementById("next").style.visibility="visible";
+    document.getElementById("round-result").style.visibility="visible";
     updateScore();
     winState();
 }
 
 function compWins() {
     ++compScore;
-    document.getElementById("player-win").style.display="none";
-    document.getElementById("comp-win").style.display="block";
-    document.getElementById("player-tie").style.display="none";
-    document.getElementById("next").style.display="block";
-    document.getElementById("round-result").style.display="block";
+    document.getElementById("player-win").style.visibility="hidden";
+    document.getElementById("comp-win").style.visibility="visible";
+    document.getElementById("player-tie").style.visibility="hidden";
+    document.getElementById("next").style.visibility="visible";
+    document.getElementById("round-result").style.visibility="visible";
     updateScore();
     winState();
 }
 
 function tie() {
-    document.getElementById("player-win").style.display="none";
-    document.getElementById("comp-win").style.display="none";
-    document.getElementById("player-tie").style.display="block";
-    document.getElementById("next").style.display="block";
-    document.getElementById("round-result").style.display="block";
+    document.getElementById("player-win").visibility="hidden";
+    document.getElementById("comp-win").visibility="hidden";
+    document.getElementById("player-tie").style.visibility="visible";
+    document.getElementById("next").style.visibility="visible";
+    document.getElementById("round-result").style.visibility="visible";
 }
 
 //function to add points to scoreboard
@@ -186,9 +187,11 @@ function playerGameOver() {
     if (playerScore === 5) {
       document.getElementById("p1-win").style.display="block";
       document.getElementById("p1-lose").style.display="none";
-    } else {
+      document.getElementById("next").style.visibility="hidden";
+    } else if (compScore === 5 {
       document.getElementById("p1-win").style.display="none";
       document.getElementById("p1-lose").style.display="block";
+      document.getElementById("next").style.visibility="hidden";
     }
 }
 

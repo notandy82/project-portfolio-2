@@ -81,6 +81,13 @@ h2 {
     }
   }
 
+/* For screens that are 900 px or less, makes game area taller */
+@media screen and (max-width: 900px) {
+    #oneplayer {
+        height: 80%;
+    }
+}
+
 #p1-win {
     display: none;
 }
