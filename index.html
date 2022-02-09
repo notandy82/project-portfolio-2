@@ -23,38 +23,38 @@
                 <li>The first to 5 points is the winner</li>
             </ul>
         </div>
+    </div>
+    <div id="game-over-modal" class="get-help">
+        <div class="modal-content">
+            <span class="close" onclick="noHelp()">&times;</span>
+            <h1 id="p1-win">Congratulations, you win!</h1>
+            <h1 id="p1-lose">Sorry, you lose!</h1>
+            <button onclick="newGame()">Play Again</button>
         </div>
-    <div id="game-over-modal" class="get-help">        
-        <span class="close" onclick="noHelp()">&times;</span>
-        <h1 id="p1-win">Congratulations, you win!</h1>
-        <h1 id="p1-lose">Sorry, you lose!</h1>
-        <button onclick="newGame()">Play Again</button>        
     </div>
     <h1 class="heading">
         Rock, Scissors, Dynamite
     </h1>
     <div id="splash" class="game-area">
-        <div class="vert-flex">
-            <div class="flexbox">
-                <div>
-                    <img src="assets/images/rock_reduced.png" alt="image of a rock" class="game-image">
-                </div>
-                <div>
-                    <img src="assets/images/scissors_reduced.png" alt="image of scissors" class="game-image">
-                </div>
-                <div>
-                    <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
-                </div>
+        <div class="flexbox">
+            <div>
+                <img src="assets/images/rock_reduced.png" alt="image of a rock" class="game-image">
             </div>
             <div>
-                <button onclick="onePlayer()">
-                    Let's Play!
-                </button>
-                <button id="help" onclick="helpModal()">
-                    Instructions
-                </button>
+                <img src="assets/images/scissors_reduced.png" alt="image of scissors" class="game-image">
+            </div>
+            <div>
+                <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
             </div>
         </div>
+        <div>
+            <button onclick="onePlayer()">
+                Let's Play!
+            </button>
+            <button id="help" onclick="helpModal()">
+                Instructions
+            </button>
+        </div>        
     </div>
     <!--Modal code from w3schools-->
     
@@ -68,15 +68,7 @@
                     <div>
                         <img id="player-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
                     </div>                    
-                </div>
-                <div class="spaced">
-                    <div id="round-result">
-                        <h2 id="player-win">You win!</h2>
-                        <h2 id="comp-win">You lose!</h2>
-                        <h2 id="player-tie">It's a tie!</h2>
-                        <button id="next" onclick="enableOne()">Next Round</button>
-                    </div>                                    
-                </div>
+                </div>                
                 <div class="vert-flex, spaced">
                     <div>
                         <h3>Computer</h3>
@@ -85,6 +77,14 @@
                         <img id="computer-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
                     </div>            
                 </div>
+            </div>
+            <div class="spaced">
+                <div id="round-result">
+                    <h2 id="player-win">You win!</h2>
+                    <h2 id="comp-win">You lose!</h2>
+                    <h2 id="player-tie">It's a tie!</h2>
+                    <button id="next" onclick="enableOne()">Next Round</button>
+                </div>                                    
             </div>
         </div>
         <div>
