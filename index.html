@@ -32,23 +32,27 @@
         Rock, Scissors, Dynamite
     </h1>
     <div id="splash" class="game-area">
-        <div class="flexbox">
-            <div>
-                <img src="assets/images/rock_reduced.png" alt="image of a rock" class="game-image">
+        <div class="vert-flex">
+            <div class="flexbox">
+                <div>
+                    <img src="assets/images/rock_reduced.png" alt="image of a rock" class="game-image">
+                </div>
+                <div>
+                    <img src="assets/images/scissors_reduced.png" alt="image of scissors" class="game-image">
+                </div>
+                <div>
+                    <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
+                </div>
             </div>
             <div>
-                <img src="assets/images/scissors_reduced.png" alt="image of scissors" class="game-image">
-            </div>
-            <div>
-                <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
+                <button onclick="onePlayer()">
+                    Let's Play!
+                </button>
+                <button id="help" onclick="helpModal()">
+                    Instructions
+                </button>
             </div>
         </div>
-        <button onclick="onePlayer()">
-            Let's Play!
-        </button>
-        <button id="help" onclick="helpModal()">
-            How to Play
-        </button>
     </div>
     <!--Modal code from w3schools-->
     

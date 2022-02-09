@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Patrick+Hand+SC&display=swap');
+html, body {
+    height: 100%;
+}
 
 body {
     text-align: center;
@@ -64,6 +67,10 @@ h2 {
     text-align: center;
 }
 
+.container {
+    bottom: 0;
+}
+
 /* On screens that are 560 px or less, makes modal wider */
 @media screen and (max-width: 560px) {
     #game-over-modal {
@@ -101,6 +108,7 @@ h2 {
 
 #splash {
     display: block;
+    height: 60%;
 }
 
 #oneplayer {
@@ -125,8 +133,9 @@ h2 {
 }
 
 .vert-flex {
-    /**display: flex;
-    flex-direction: column;**/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 80%;
 }
 
