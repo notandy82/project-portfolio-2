@@ -47,14 +47,12 @@
                 <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
             </div>
         </div>
-        <div>
-            <button onclick="onePlayer()">
-                Let's Play!
-            </button>
-            <button id="help" onclick="helpModal()">
-                Instructions
-            </button>
-        </div>        
+        <button onclick="onePlayer()">
+            Let's Play!
+        </button>
+        <button id="help" onclick="helpModal()">
+            Instructions
+        </button>                
     </div>
     <!--Modal code from w3schools-->
     
@@ -86,15 +84,15 @@
                     <button id="next" onclick="enableOne()">Next Round</button>
                 </div>                                    
             </div>
-        </div>
-        <div>
             <div>
-                <h2>Score</h2>
-                <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
+                <div>
+                    <h2>Score</h2>
+                    <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
+                </div>
+                <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
+                <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors</button>
+                <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite</button>
             </div>
-            <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
-            <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors</button>
-            <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite</button>
         </div>
         <button id="no-more" onclick="quitGame()">Quit</button>
     </div>

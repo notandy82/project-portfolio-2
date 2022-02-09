@@ -188,7 +188,7 @@ function playerGameOver() {
       document.getElementById("p1-win").style.display="block";
       document.getElementById("p1-lose").style.display="none";
       document.getElementById("next").style.visibility="hidden";
-    } else if (compScore === 5 {
+    } else if (compScore === 5) {
       document.getElementById("p1-win").style.display="none";
       document.getElementById("p1-lose").style.display="block";
       document.getElementById("next").style.visibility="hidden";
