@@ -1,4 +1,4 @@
-// Functions to select game type
+// Function to select game type
 function onePlayer() {
     document.getElementById("splash").style.display="none";
     document.getElementById("oneplayer").style.display="block";
@@ -46,6 +46,7 @@ function playerDynamiteThrow() {
     bringIt();
     disableOne();
 }
+// Functions to replace images with player choice
 
 function playerRockImage() {
     document.getElementById("player-image").src="assets/images/rock_reduced.png";
@@ -66,18 +67,6 @@ function disableOne() {
     for (var i = 0; i < on.length; i++) {
         on[i].disabled = true;
       }
-}
-
-function enableOne() {
-    var on = document.getElementsByClassName("player-one-choice");
-    for (var i = 0; i < on.length; i++) {
-        on[i].disabled = false;
-      }
-    document.getElementById("next").style.visibility="hidden";
-    document.getElementById("round-result").style.visibility="hidden";
-    document.getElementById("player-win").style.visibility="hidden";
-    document.getElementById("comp-win").style.visibility="hidden";
-    document.getElementById("player-tie").style.visibility="hidden";
 }
 
 // Function for computer choice
@@ -109,7 +98,22 @@ function computerDynamiteImage() {
     document.getElementById("computer-image").src="assets/images/dynamite_reduced.png";
 }
 
-// If else statements for determining winner
+function enableOne() {
+    var on = document.getElementsByClassName("player-one-choice");
+    for (var i = 0; i < on.length; i++) {
+        on[i].disabled = false;
+      }
+    document.getElementById("next").style.visibility="hidden";
+    document.getElementById("round-result").style.visibility="hidden";
+    document.getElementById("player-win").style.visibility="hidden";
+    document.getElementById("comp-win").style.visibility="hidden";
+    document.getElementById("player-tie").style.visibility="hidden";
+}
+
+
+
+// Functions for determining winner
+
 function bringIt() {
     setTimeout(doIt, 1500);
 }
@@ -200,6 +204,8 @@ function playerGameOver() {
         // do nothing
     }
 }
+
+// Game over functions
 
 function resetScore() {
     playerScore = 0;
