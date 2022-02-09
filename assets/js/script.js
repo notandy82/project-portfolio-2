@@ -72,6 +72,7 @@ function enableOne() {
         on[i].disabled = false;
       }
     document.getElementById("next").style.display = "none";
+    document.getElementById("round-result").style.display = "none";
 }
 
 // Function for computer choice
@@ -138,6 +139,7 @@ function playerWins() {
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="none";
     document.getElementById("next").style.display="block";
+    document.getElementById("round-result").style.display="block";
     score();
 }
 
@@ -147,6 +149,7 @@ function compWins() {
     document.getElementById("comp-win").style.display="block";
     document.getElementById("player-tie").style.display="none";
     document.getElementById("next").style.display="block";
+    document.getElementById("round-result").style.display="block";
     computerScore();
 }
 
@@ -156,6 +159,7 @@ function tie() {
     document.getElementById("comp-win").style.display="none";
     document.getElementById("player-tie").style.display="block";
     document.getElementById("next").style.display="block";
+    document.getElementById("round-result").style.display="block";
 }
 
 //functions to add points to scoreboard
@@ -201,8 +205,4 @@ function newGame() {
     document.getElementById("splash").style.display="block";
     document.getElementById("oneplayer").style.display="none";
     document.getElementById("game-over-modal").style.display="none";
-}
-
-function quitGame() {
-
 }
