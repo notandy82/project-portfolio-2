@@ -106,7 +106,7 @@ h2 {
 }
 
 #next {
-    display: none;
+    visibility: hidden;
     margin: 0 auto;
 }
 
@@ -117,11 +117,6 @@ h2 {
     justify-content: space-between;
 }
 
-.spaced {
-    width: 30%;
-    text-align: center;
-}
-
 .vert-flex {
     display: flex;
     flex-direction: column;
@@ -130,24 +125,28 @@ h2 {
 }
 
 #player-win {
-    display: none;
+    visibility: hidden;
 }
 
 #comp-win {
-    display: none;
+    visibility: hidden;
 }
 
 #player-tie {
-    display: none;
+    visibility: hidden;
+}
+
+#round-result {
+    text-align: center;
 }
 
 /* On screens that are 560 px or less, makes modal wider */
 @media screen and (max-width: 560px) {
     #game-over-modal {
-      width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
     }
   }
 
