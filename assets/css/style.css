@@ -30,6 +30,16 @@ button {
     margin-right: 25%;
 }
 
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
 .close {
     font-weight: bold;
 }
@@ -44,6 +54,14 @@ button {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+#game-over-modal h1 {
+    text-align: center;
+}
+
+#game-over-modal button {
+    text-align: center;
 }
 
 /* On screens that are 560 px or less, makes modal wider */
