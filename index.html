@@ -12,17 +12,19 @@
 </head>
 <body>
     <div id="help-modal" class="get-help">
-        <span class="close" onclick="noHelp()">&times;</span>
-        <h2>How to play</h2>
-        <ul>
-            <li>Rock beats scissors</li>
-            <li>Scissors beats dynamite</li>
-            <li>Dynamite beats scissors</li>
-            <li>Play against the computer using the buttons</li>
-            <li>The first to 5 points is the winner</li>
-        </ul>        
-    </div>
-    <div id="game-over-modal">        
+        <div class="modal-content">
+            <span class="close" onclick="noHelp()">&times;</span>
+            <h2>How to play</h2>
+            <ul>
+                <li>Rock beats scissors</li>
+                <li>Scissors beats dynamite</li>
+                <li>Dynamite beats scissors</li>
+                <li>Play against the computer using the buttons</li>
+                <li>The first to 5 points is the winner</li>
+            </ul>
+        </div>
+        </div>
+    <div id="game-over-modal" class="get-help">        
         <span class="close" onclick="noHelp()">&times;</span>
         <h1 id="p1-win">Congratulations, you win!</h1>
         <h1 id="p1-lose">Sorry, you lose!</h1>
@@ -57,41 +59,42 @@
     <!--Modal code from w3schools-->
     
     <div class="game-area" id="oneplayer">        
-        <div class="flexbox">
-            <div class="vert-flex, spaced">
-                <div>
-                    <h3>Player 1</h3>
+        <div class="vert-flex">
+            <div class="flexbox">
+                <div class="vert-flex, spaced">
+                    <div>
+                        <h3>Player 1</h3>
+                    </div>
+                    <div>
+                        <img id="player-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
+                    </div>                    
                 </div>
-                <div>
-                    <img id="player-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
+                <div class="spaced">
+                    <div id="round-result">
+                        <h2 id="player-win">You win!</h2>
+                        <h2 id="comp-win">You lose!</h2>
+                        <h2 id="player-tie">It's a tie!</h2>
+                        <button id="next" onclick="enableOne()">Next Round</button>
+                    </div>                                    
                 </div>
-                <div>
-                    <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
-                    <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors</button>
-                    <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite</button>
+                <div class="vert-flex, spaced">
+                    <div>
+                        <h3>Computer</h3>
+                    </div>
+                    <div>
+                        <img id="computer-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
+                    </div>            
                 </div>
-            </div>
-            <div class="spaced">
-                <div id="round-result">
-                    <h2 id="player-win">You win!</h2>
-                    <h2 id="comp-win">You lose!</h2>
-                    <h2 id="player-tie">It's a tie!</h2>
-                    <button id="next" onclick="enableOne()">Next Round</button>
-                </div>
-                                
-            </div>
-            <div class="vert-flex, spaced">
-                <div>
-                    <h3>Computer</h3>
-                </div>
-                <div>
-                    <img id="computer-image" src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
-                </div>            
             </div>
         </div>
         <div>
-            <h2>Score</h2>
-            <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
+            <div>
+                <h2>Score</h2>
+                <h3><span id="player-score">0</span> : <span id="computer-score">0</span></h3>
+            </div>
+            <button onclick="playerRockThrow()" class="player-one-choice">Rock</button>
+            <button onclick="playerScissorsThrow()" class="player-one-choice">Scissors</button>
+            <button onclick="playerDynamiteThrow()" class="player-one-choice">Dynamite</button>
         </div>
         <button id="no-more" onclick="quitGame()">Quit</button>
     </div>
