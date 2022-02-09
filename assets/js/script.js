@@ -16,6 +16,10 @@ function noHelp() {
     document.getElementById("help-modal").style.display="none";
 }
 
+function noGame() {
+    document.getElementById("game-over-modal").style.display="none";
+}
+
 // One player game functions
 let playerChoice = "";
 let compChoice = "";
