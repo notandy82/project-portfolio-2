@@ -176,7 +176,7 @@ function computerScore() {
 
 function winState() {
     if (playerScore === 5 || compScore === 5) {
-        playerGameOver()
+        playerGameOver();
         document.getElementById("next").style.display="none";
         console.log("game over");
     } else {
@@ -193,7 +193,7 @@ function playerGameOver() {
       document.getElementById("p1-win").style.display="none";
       document.getElementById("p1-lose").style.display="block";
     }
-};
+}
 
 function newGame() {
     document.getElementById("player-score").innerHTML=0;
