@@ -11,6 +11,11 @@ body {
 button {
     margin-bottom: 20px;
     margin-left: 10px;
+    background-color: white;
+    border-radius: 12px;
+    border-style: solid;
+    font-family: Patrick Hand SC, cursive;
+    font-size: 1em;
 }
 
 .get-help {
@@ -104,13 +109,6 @@ button {
 .vert-flex {
     display: flex;
     flex-direction: column;
-}
-
-button {
-    background-color: white;
-    border-radius: 12px;
-    border-style: solid;
-    font-family: Patrick Hand SC, cursive;
 }
 
 #player-win {
