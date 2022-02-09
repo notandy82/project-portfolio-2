@@ -62,6 +62,10 @@ function playerDynamiteImage() {
 function disableOne() {
     document.getElementById("next").style.visibility="hidden";
     document.getElementById("round-result").style.visibility="hidden";
+    var on = document.getElementsByClassName("player-one-choice");
+    for (var i = 0; i < on.length; i++) {
+        on[i].disabled = true;
+      }
 }
 
 function enableOne() {
