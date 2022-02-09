@@ -175,8 +175,8 @@ function updateScore() {
 
 function winState() {
     if (playerScore === 5 || compScore === 5) {
-        console.log("Game over")
-        playerGameOver();                
+        console.log("Game over");
+        playerGameOver();
     } else {
         console.log("Keep playing");
     }
@@ -192,6 +192,8 @@ function playerGameOver() {
       document.getElementById("p1-win").style.display="none";
       document.getElementById("p1-lose").style.display="block";
       document.getElementById("next").style.visibility="hidden";
+    } else {
+        // do nothing
     }
 }
 

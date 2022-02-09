@@ -71,23 +71,6 @@ h2 {
     bottom: 0;
 }
 
-/* On screens that are 560 px or less, makes modal wider */
-@media screen and (max-width: 560px) {
-    #game-over-modal {
-      width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: center;
-    }
-  }
-
-/* For screens that are 900 px or less, makes game area taller */
-@media screen and (max-width: 900px) {
-    #oneplayer {
-        height: 80%;
-    }
-}
-
 #p1-win {
     display: none;
 }
@@ -156,4 +139,21 @@ h2 {
 
 #player-tie {
     display: none;
+}
+
+/* On screens that are 560 px or less, makes modal wider */
+@media screen and (max-width: 560px) {
+    #game-over-modal {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
+/* For screens that are 900 px or less, makes game area taller */
+@media screen and (max-width: 900px) {
+    #oneplayer {
+        height: 80%;
+    }
 }
