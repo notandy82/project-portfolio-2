@@ -1,6 +1,6 @@
 # Rock, Scissors, Dynamite
 
-![Responsive view mockup](assets/images/rock_scissors_responsive.png)
+![Responsive view mockup](docs/images/rock_scissors_responsive.png)
 Rock, Scissors, Paper is a game of chance pitting the user against the computer.  
 The game is for anyone who wants to play a game of chance, and especially for anyone who is of the opinion that paper would never defeat a rock.
 Live demo [_here_](https://notandy82.github.io/project-portfolio-2/)
