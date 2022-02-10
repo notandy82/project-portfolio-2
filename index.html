@@ -11,7 +11,7 @@
     <meta name="keywords" content=" Rock, Scissors, Paper, game of chance, paper can't beat rock">
 </head>
 <body>
-    <div id="help-modal" class="get-help">
+    <div id="help-modal" class="get-help modal-frame">
         <div class="modal-content">
             <span class="close" onclick="noHelp()">&times;</span>
             <h2 id="title">How to play</h2>
@@ -24,12 +24,14 @@
             </ul>
         </div>
     </div>
-    <div id="game-over-modal">
+    <div id="game-over-modal" class="modal-frame">
         <div class="modal-content">
             <span class="close" onclick="noGame()">&times;</span>
-            <h1 id="p1-win">Congratulations, you win!</h1>
-            <h1 id="p1-lose">Sorry, you lose!</h1>
-            <button onclick="newGame()">Play Again</button>
+            <div>
+                <h1 id="p1-win" class="center">Congratulations, you win!</h1>
+                <h1 id="p1-lose" class="center">Sorry, you lose!</h1>
+                <button onclick="newGame()" id="more">Play Again</button>
+            </div>
         </div>
     </div>
     <h1 class="heading">

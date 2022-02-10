@@ -30,6 +30,7 @@ button {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+    border-radius: 12px;
 }
 
 #title {
@@ -59,6 +60,9 @@ h2 {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+    text-align: left;
+    border-radius: 12px;
+    margin-top: 20%;
 }
 
 #game-over-modal h1 {
@@ -67,6 +71,8 @@ h2 {
 
 #game-over-modal button {
     text-align: center;
+    margin-left: 43%;
+    margin-right: 43%;
 }
 
 .container {
