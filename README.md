@@ -32,7 +32,8 @@ Live demo [_here_](https://notandy82.github.io/project-portfolio-2/)
 
 
 ### Features to Implement
-The first additional feature to implement would be a two-player version. This could be done by either providing one player's choices at a time, or providing both players the option to make their selections at the same time, but not triggering the result evaluation function until both have done so. Another feature would be to allow for keyboard input for desktop or laptop users. This was included in the original plan for the project but was removed due to time constraints.
+- The first additional feature to implement would be a two-player version. This could be done by either providing one player's choices at a time, or providing both players the option to make their selections at the same time, but not triggering the result evaluation function until both have done so. Another feature would be to allow for keyboard input for desktop or laptop users. This was included in the original plan for the project but was removed due to time constraints.
+- Some additional work to improve the responsiveness of the site on smaller devices should be undertaken.
 
 ## Technologies Used
 - HTML 5 for the site structure
