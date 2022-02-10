@@ -9,8 +9,6 @@ body {
     background-color: #ccffcc;
 }
 
-/** styling for modal**/
-
 button {
     margin-bottom: 20px;
     margin-left: 10px;
@@ -21,6 +19,7 @@ button {
     font-size: 1em;
 }
 
+/** styling for modal**/
 .get-help {
     display: none;
     position: fixed;
@@ -31,6 +30,10 @@ button {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+#title {
+    text-decoration: underline;
 }
 
 ul {
@@ -51,7 +54,6 @@ h2 {
     display: none;
     position: fixed;
     z-index: 1;
-    text-align: left;
     border-style: ridge;
     background-color: white;
     width: 50%;
@@ -145,7 +147,7 @@ h2 {
     text-align: center;
 }
 
-/* On screens that are 560 px or less, makes modal wider */
+/* On screens that are 560 px or less */
 @media screen and (max-width: 560px) {
     #game-over-modal {
         width: 80%;
@@ -153,9 +155,17 @@ h2 {
         margin-right: 10%;
         text-align: center;
     }
-  }
 
-/* For screens that are 900 px or less, makes game area taller */
+    .starter-button {
+        margin-top: 80%;
+    }
+
+    .flexbox {
+        margin-top: 15%;
+    }
+}
+
+/* For screens that are 900 px or less*/
 @media screen and (max-width: 900px) {
     #oneplayer {
         height: 80%;

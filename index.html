@@ -14,7 +14,7 @@
     <div id="help-modal" class="get-help">
         <div class="modal-content">
             <span class="close" onclick="noHelp()">&times;</span>
-            <h2>How to play</h2>
+            <h2 id="title">How to play</h2>
             <ul>
                 <li>Rock beats scissors</li>
                 <li>Scissors beats dynamite</li>
@@ -24,7 +24,7 @@
             </ul>
         </div>
     </div>
-    <div id="game-over-modal" class="get-help">
+    <div id="game-over-modal">
         <div class="modal-content">
             <span class="close" onclick="noGame()">&times;</span>
             <h1 id="p1-win">Congratulations, you win!</h1>
@@ -47,12 +47,12 @@
                 <img src="assets/images/dynamite_reduced.png" alt="image of dynamite" class="game-image">
             </div>
         </div>
-        <button onclick="onePlayer()">
+        <button onclick="onePlayer()" class="starter-button">
             Let's Play!
         </button>
-        <button id="help" onclick="helpModal()">
+        <button id="help" onclick="helpModal()" class="starter-button">
             Instructions
-        </button>                
+        </button>             
     </div>
     <!--Modal code from w3schools-->
     
