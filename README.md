@@ -11,6 +11,7 @@ Live demo [_here_](https://notandy82.github.io/project-portfolio-2/)
   * [Features to Implement](#features-to-implement)
 * [Technologies Used](#technologies-used)
 * [Testing](#testing)
+  * [Bug Fixes](#bug-fixes)
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Contact](#contact)
@@ -54,6 +55,8 @@ The first additional feature to implement would be a two-player version. This co
    - Function with the largest signature take 0 arguments while the median is 0.
    - Largest function has 10 statements in it while the median is 4.
    - The most complex function has a cyclomatic complexity value of 19 while the median is 1.
+### Bug Fixes
+- Following the addition and testing of an exit button, it was discovered that while the scores of a new game would be set to zero, further points would be added to the score of the last game which would then be displayed.  Attempts to fix this were unsuccessful, so the scoring system was removed and built again.
 
 
 ## Deployment
