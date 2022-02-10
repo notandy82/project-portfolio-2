@@ -57,6 +57,7 @@ The first additional feature to implement would be a two-player version. This co
    - The most complex function has a cyclomatic complexity value of 19 while the median is 1.
 ### Bug Fixes
 - Following the addition and testing of an exit button, it was discovered that while the scores of a new game would be set to zero, further points would be added to the score of the last game which would then be displayed.  Attempts to fix this were unsuccessful, so the scoring system was removed and built again.
+- While improving responsiveness of the site for smaller devices, an issue was discovered where the game page would not load.  This was fixed by removing the buttons from a div.
 
 
 ## Deployment
